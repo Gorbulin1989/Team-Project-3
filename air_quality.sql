@@ -1,8 +1,8 @@
-CREATE TABLE air_quality (
+CREATE TABLE air_quality_daily (
+    city VARCHAR(255),
     date TIMESTAMP,
     longitude DOUBLE PRECISION,
     latitude DOUBLE PRECISION,
-    city VARCHAR(255),
     population BIGINT,
     AQI INTEGER,
     CO DOUBLE PRECISION,
@@ -27,4 +27,38 @@ CREATE TABLE air_quality (
     winddirection_100m DOUBLE PRECISION,
     windgusts_10m DOUBLE PRECISION,
     elevation INTEGER
+);
+
+
+
+
+CREATE TABLE air_pollution_daily (
+    city TEXT,
+    date DATE,
+    longitude FLOAT,
+    latitude FLOAT,
+    population NUMERIC,
+    aqi FLOAT,
+    co FLOAT,
+    no FLOAT,
+    no2 FLOAT,
+    o3 FLOAT,
+    so2 FLOAT,
+    pm2_5 FLOAT,
+    pm10 FLOAT,
+    nh3 FLOAT,
+    temperature_2m_deg_c FLOAT,
+    relativehumidity_2m_perc FLOAT,
+    precipitation_mm FLOAT,
+    rain_mm FLOAT,
+    cloudcover_perc FLOAT,
+    cloudcover_low_perc FLOAT,
+    cloudcover_mid_perc FLOAT,
+    cloudcover_high_perc FLOAT,
+    windspeed_10m_kmh FLOAT,
+    windspeed_100m_kmh FLOAT,
+    winddirection_10m_deg FLOAT,
+    winddirection_100m_deg FLOAT,
+    windgusts_10m_kmh FLOAT,
+    elevation FLOAT
 );
