@@ -1,96 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Top 8 Cities Pollution</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <!-- D3 JavaScript -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>City Weather Data</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- Leaflet CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-      crossorigin=""
-    />
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script
-      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-      crossorigin=""
-    ></script>
-    <!-- Our CSS -->
-    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
-
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/highcharts-more.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
-
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 jumbotron text-center">
-          <h1>Top 8 Cities Pollution Dashboard</h1>
-          <p>Use the interactive charts below to explore the dataset</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="well">
-            <h5>Pollutant:</h5>
-            <select
-              id="selDataset"
-              onchange="optionChanged(this.value)"
-            ></select>
-          </div>
-          <div>
-            <div id="hbar"></div>
-          </div>
-          <!-- <div class="panel panel-primary">
-           <div class="panel-heading"> 
-            <h3 class="panel-title">Demographic Info</h3> 
-           </div> 
-          <div id="sample-metadata" class="panel-body"></div> -->
-        </div>
+    <select id="city-select">
+      <option value="Delhi">Delhi</option>
+      <option value="Tokyo">Tokyo</option>
+      <option value="Shanghai">Shanghai</option>
+      <option value="São Paulo">São Paulo</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Mexico City">Mexico City</option>
+      <option value="Beijing">Beijing</option>
+      <option value="Osaka">Osaka</option>
+      <option value="New York">New York</option>
+      <option value="Cairo">Cairo</option>
+    </select>
+    <div id="plot"></div>
 
-        <div class="col-md-9">
-          <div class="row">
-            <h4 class="col-md-12">AQI indicator per city</h4>
-          </div>
-          <div class="row">
-            <!-- Create a container element for each gauge chart -->
-            <div id="charts-container"></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <!-- Create a container for the line chart and dropdown menu -->
-          <div id="line-chart-container">
-            <div>
-              <label for="city-select">Select a city:</label>
-              <select id="city-select"></select>
-            </div>
-            <div id="line-chart"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- The div that holds our map -->
-    <div id="map"></div>
-
-    <script src="./static/js/app.js"></script>
-    <!-- <script src="./static/js/bonus.js"></script> -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="static/logic.js"></script>
   </body>
 </html>
