@@ -11,7 +11,12 @@ We collected our air quality data from https://openweathermap.org/api/air-pollut
 
 We selected several visualizations for our dashboard to help determine the relationship between weather data, population, and air pollution in the given cities. 
 
-Mapping: We created an interactive map which depicts the 8 cities with circles of varying sizes and colors. The larger circles indicate larger populations and the colors indicate air quality index (AQI). High AQI indicates poor air quality and is represented by red circles, yellow is fair air quality and green is good air quality. 
+Mapping: We created an interactive map which depicts the 8 cities with circles of varying sizes and colors. The larger circles indicate larger populations and the colors indicate air quality index (AQI). High AQI indicates poor air quality and is represented by red circles, yellow is fair air quality and green is good air quality. You can hover your cursor over a city to see the AQI and population values.
 
 ![image](https://user-images.githubusercontent.com/119651909/233489321-a12ac06b-966e-483c-8d62-a473c6fb3c4f.png)
+
+Pollutant Level Dropdown: We created a bar chart with a dropdown menu populated with AQI and common pollutant names. The graph shows the levels of the selected pollutant for each of the 8 cities. 
+
+![image](https://user-images.githubusercontent.com/119651909/233491270-23991fed-c96e-48ff-95ee-2b1193f399d2.png)
+
 
