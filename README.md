@@ -19,4 +19,14 @@ Pollutant Level Dropdown: We created a bar chart with a dropdown menu populated 
 
 ![image](https://user-images.githubusercontent.com/119651909/233491270-23991fed-c96e-48ff-95ee-2b1193f399d2.png)
 
+Gauges: We created gauges which depict the cities with the lowest, median, and highest AQI values. 
+
+![image](https://user-images.githubusercontent.com/119651909/233492153-6b8b3bf7-9c3a-450b-864f-89e99157ab5e.png)
+
+Weather Line Chart: We created a line chart with multiple lines indicating the temperature, precipitation, and AQI values for a selected city for the year 2022. 
+
+![image](https://user-images.githubusercontent.com/119651909/233492870-94ec4e06-8f74-459c-b734-bc2639385c91.png)
+
+
+
 
